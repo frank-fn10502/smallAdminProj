@@ -1,0 +1,60 @@
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row .wait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.row .wait .text {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.row .wait .text p {
+  margin: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.row .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row .content .table td, .row .content .table th {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.row .content .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.check-disable {
+  background-color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/*# sourceMappingURL=Order.css.map */

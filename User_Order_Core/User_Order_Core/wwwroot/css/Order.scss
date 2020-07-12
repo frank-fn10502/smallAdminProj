@@ -1,0 +1,38 @@
+﻿.row{
+    justify-content: center;
+    .wait
+    {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 10px 0;
+        .text{
+            font-size: 16px;
+            margin-left: 10px;
+            p{
+                margin: 0;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .table 
+        {
+            td ,th{ 
+                text-align: center;
+                user-select: none;
+            }
+        }
+        .button-group{
+            display: flex;
+        }
+    }
+}
+.check-disable{
+    background-color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
