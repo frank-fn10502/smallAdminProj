@@ -57,11 +57,9 @@ namespace User_Order_Core.Controllers
             //create cookie
             if(result.isSuccess)
             {
-                var jwtToken = new JwtService().GenerateToken((string)result.Data);
+                var jwtToken = JwtService.GenerateToken((string)result.Data);
 
-                CookieOptions option = new CookieOptions();
-                option.Expires = DateTime.Now.AddMinutes(45);
-                Response.Cookies.Append("authentication", jwtToken, option);
+                JwtService.CreateJwtCookie(Response ,jwtToken);
             }
 
             return Json(result);
